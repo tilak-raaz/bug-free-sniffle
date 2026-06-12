@@ -1,7 +1,7 @@
 import Hero from '@/components/Hero';
 export default function Home() {
   return (
-    <div className="flex h-screen flex-col items-center">
+    <div className="flex min-h-screen flex-col items-center">
       <Hero />
       <div className="font-canopee bg-secondary text-background text-shadow hack-shadow mx-auto w-2xl py-4 text-center text-5xl">
         happy coding!
