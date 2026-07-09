@@ -20,7 +20,7 @@ const FAQAccordion = () => {
     setOpenId(openId === id ? null : id);
   };
   return (
-    <div className="relative min-h-screen w-full px-2 py-8 font-sans select-none md:px-4 md:py-12">
+    <div className="relative w-full px-2 py-8 pb-16 font-sans select-none md:min-h-screen md:px-4 md:py-12 md:pb-12">
       <div className="">
         <div
           className="absolute top-0 right-0 left-0 z-10 h-6 md:h-8"
@@ -48,14 +48,14 @@ const FAQAccordion = () => {
           />
         </div>
         <div className="relative z-20 mx-auto w-full max-w-6xl">
-          <div className="relative mt-16 mb-32 flex flex-col items-center select-none md:mt-10 md:mb-20">
+          <div className="relative mt-16 mb-10 flex flex-col items-center select-none md:mt-10 md:mb-20">
             <div className="relative inline-block">
-              <h1 className="font-canopee pb-2 text-center text-6xl leading-[0.75] font-normal tracking-tight text-[#2A5266] [text-shadow:4px_4px_1px_#461A0E] md:pb-4 md:text-9xl">
+              <h1 className="font-canopee pb-3 text-center text-6xl leading-none font-normal tracking-wide text-[#2A5266] [text-shadow:1px_2px_0px_#461A0E] md:pb-5 md:text-9xl md:leading-[0.8] md:tracking-tight md:[text-shadow:4px_4px_0px_#461A0E]">
                 FAQS
               </h1>
               {/* Custom single underline matching the design */}
-              <div className="pointer-events-none absolute right-0 bottom-[2px] left-0 md:bottom-[4px]">
-                <div className="h-[5px] w-full border-[2px] border-[#1A0E05] bg-[#2A5266] shadow-[3px_3px_1px_#461A0E] md:h-[7px]"></div>
+              <div className="pointer-events-none absolute right-0 bottom-0 left-0">
+                <div className="h-[5px] w-full border-[2px] border-[#1A0E05] bg-[#2A5266] shadow-[1px_1px_0px_#461A0E] md:h-[7px] md:shadow-[2.5px_2.5px_0px_#461A0E]"></div>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const FAQAccordion = () => {
                         isOpen ? 'mt-4 max-h-[300px] md:mt-[18px]' : 'max-h-0'
                       }`}
                     >
-                      <p className="font-sans text-[7px] leading-relaxed font-semibold text-[#1A0E05] md:text-base">
+                      <p className="font-sans text-[13px] leading-relaxed font-semibold text-[#1A0E05] md:text-base">
                         {item.answer}
                       </p>
                     </div>
@@ -125,7 +125,7 @@ const FAQAccordion = () => {
           </div>
         </div>
       </div>
-      <div className="pointer-events-none absolute right-0 -bottom-12 left-0 z-100 translate-y-20 overflow-hidden md:translate-y-[350px]">
+      <div className="pointer-events-none absolute right-0 -bottom-6 left-0 z-100 translate-y-4 overflow-hidden md:translate-y-[350px]">
         <Image
           src={CLOUDINARY_ASSETS.bottomrail}
           alt="Bottom Rails"
