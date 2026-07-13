@@ -17,7 +17,7 @@ const PlusIcon = ({ className }: { className?: string }) => (
 const XIcon = ({ className }: { className?: string }) => (
   <Image
     src={XIcons}
-    alt="Close Icon"
+    alt="Close icon"
     width={32}
     height={32}
     className={className}
