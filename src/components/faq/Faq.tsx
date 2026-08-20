@@ -144,12 +144,12 @@ function FaqSection() {
   };
 
   return (
-    <div className="relative my-2 w-full" id="faqs">
+    <div className="relative my-2 w-full scroll-mt-24" id="faqs">
       <section className="bg-background] relative w-full lg:py-20">
         <h1 className="text-center font-[Canopee] text-[16vw] leading-none font-normal text-[#2A5266] underline decoration-solid [text-shadow:1.5px_1.5px_0_#5A2D1D] [text-underline-position:from-font] sm:text-[14vw] md:text-[12vw] lg:[text-shadow:4px_4px_0_#1a0e05]">
           FAQS
         </h1>
-        <div className="ssm:top-[11rem] absolute top-[10rem] -left-5 sm:top-[14rem] lg:top-[20rem]">
+        <div className="ssm:top-44 absolute top-40 -left-5 sm:top-56 lg:top-80">
           <Image
             src="/leftcd.svg"
             alt="Left CD"
@@ -160,7 +160,7 @@ function FaqSection() {
         </div>
 
         {/* Right CD */}
-        <div className="ssm:top-[11rem] absolute top-[10rem] -right-5 sm:top-[14rem] lg:top-[20rem]">
+        <div className="ssm:top-44 absolute top-40 -right-5 sm:top-56 lg:top-80">
           <Image
             src="/rightdisc.svg"
             alt="Right CD"
@@ -170,7 +170,7 @@ function FaqSection() {
           />
         </div>
 
-        <div className="container mx-auto my-[3rem] flex w-[76vw] flex-col gap-y-2.5 px-4 pb-4 sm:my-[4rem] sm:px-6 sm:pb-6 md:gap-4 lg:my-[6rem] lg:px-8 lg:pb-8">
+        <div className="container mx-auto my-12 flex w-[76vw] flex-col gap-y-2.5 px-4 pb-4 sm:my-16 sm:px-6 sm:pb-6 md:gap-4 lg:my-24 lg:px-8 lg:pb-8">
           {faqItems.map((item, index) =>
             item ? (
               <AccordionItem

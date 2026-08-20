@@ -102,7 +102,10 @@ export default function Timeline() {
     activeDay === 1 ? timelineConfig.day1Events : timelineConfig.day2Events;
 
   return (
-    <section className="relative mb-2 bg-[#E3442E] p-[3vw] pb-[3rem]">
+    <section
+      id="timeline"
+      className="relative mb-2 scroll-mt-24 bg-[#E3442E] p-[3vw] pb-[3rem]"
+    >
       <div className="flex flex-3 items-center justify-between p-2">
         <div className="w-1/4">
           <Image

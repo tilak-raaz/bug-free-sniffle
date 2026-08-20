@@ -61,7 +61,7 @@ function WhatAndStatistics() {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative flex">
+    <div ref={containerRef} id="about" className="relative flex scroll-mt-24">
       <div className="mt-[3vw] w-3/4 px-[4vw] pt-[7vw] sm:pt-[7vw] md:mt-[5vw] md:pt-[3vw] lg:mt-[6vw]">
         <div className="absolute top-40 left-0 z-[-1] h-full w-full">
           <Image
@@ -78,13 +78,13 @@ function WhatAndStatistics() {
         <div className="absolute left-0 my-8 h-2 w-[50vw] bg-[linear-gradient(to_right,#1A0E05_0%,rgba(26,14,5,0)_100%)] md:my-20" />
         <Statistics />
 
-        <div className="absolute -bottom-[3.25vw] left-0 z-[-10] w-full md:-bottom-[3.5vw]">
+        <div className="absolute bottom-[-3.25vw] left-0 -z-10 w-full md:bottom-[-3.5vw]">
           <Image
             src={timelineConfig.bottomTapeSrc}
             alt="Bottom Tape"
             width={0}
             height={0}
-            className="w-[100vw]"
+            className="w-screen"
           />
         </div>
       </div>

@@ -1,24 +1,17 @@
-export const navItems = [
-  {
-    name: 'Home',
-    link: '/#home',
-  },
-  {
-    name: 'About us',
-    link: '/#about',
-  },
-  // {
-  //     name: "Score your resume",
-  //     link: "https://app.prepverse.xyz/login?ref=PGKXSX",
-  //     type: "special",
-  // },
+import { sectionIds } from './index';
+
+type NavItem = {
+  name: string;
+  link: string;
+};
+
+export const navItems: NavItem[] = [
+  { name: 'Home', link: `/#${sectionIds.home}` },
+  { name: 'About us', link: `/#${sectionIds.about}` },
+  { name: 'Timeline', link: `/#${sectionIds.timeline}` },
   {
     name: 'Contact us',
     link: 'mailto:webwiz.nitrkl@gmail.com',
-  },
-  {
-    name: 'Timeline',
-    link: '/#timeline',
   },
 ];
 export const DISCORD_IMAGE =

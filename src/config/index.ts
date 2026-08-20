@@ -7,6 +7,7 @@ export const images = {
 };
 
 export { timelineConfig } from './timeline';
+export { sponsorTiers } from './sponsor';
 export type { TimelineEvent } from './timeline';
 
 export type HeroNavItem = {
@@ -14,13 +15,35 @@ export type HeroNavItem = {
   href: string;
 };
 
+export const sectionIds = {
+  home: 'home',
+  about: 'about',
+  timeline: 'timeline',
+  prizes: 'prizes',
+  team: 'team',
+  sponsors: 'sponsors',
+  faqs: 'faqs',
+} as const;
+
+export const siteNavLinks: HeroNavItem[] = [
+  { name: 'Home', href: `/#${sectionIds.home}` },
+  { name: 'About Us', href: `/#${sectionIds.about}` },
+  { name: 'Timeline', href: `/#${sectionIds.timeline}` },
+  { name: 'Prizes', href: `/#${sectionIds.prizes}` },
+  { name: 'Our Team', href: `/#${sectionIds.team}` },
+  { name: 'Sponsors', href: `/#${sectionIds.sponsors}` },
+  { name: 'FAQs', href: `/#${sectionIds.faqs}` },
+];
+
+export const footerSectionLinks = [
+  { label: 'About us', href: `/#${sectionIds.about}` },
+  { label: 'Prizes', href: `/#${sectionIds.prizes}` },
+  { label: 'Sponsors', href: `/#${sectionIds.sponsors}` },
+  { label: 'FAQs', href: `/#${sectionIds.faqs}` },
+] as const;
+
 export const heroConfig = {
-  navItems: [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/#about' },
-    { name: 'Contact Us', href: '/contact' },
-    { name: 'Events', href: '/events' },
-  ] as HeroNavItem[],
+  navItems: siteNavLinks,
 
   social: {
     discordUrl: 'https://discord.gg/',

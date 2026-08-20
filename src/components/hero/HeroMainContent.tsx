@@ -100,6 +100,7 @@ export function HeroMainContent() {
             width={1380}
             height={1200}
             priority
+            fetchPriority="high"
             className="block w-[80vw] md:w-[55vw]"
           />
         </div>
@@ -110,6 +111,7 @@ export function HeroMainContent() {
             width={1380}
             height={1200}
             priority
+            fetchPriority="high"
             className="block w-[100vw] md:w-[55vw]"
           />
         </div>

@@ -1,20 +1,13 @@
+import { sectionIds } from './index';
+
 export const footerLinks = [
-  { label: 'About us', href: '#about' },
-  {
-    label: 'Prizes',
-    href: '#prizes',
-  },
+  { label: 'Home', href: `/#${sectionIds.home}` },
+  { label: 'About us', href: `/#${sectionIds.about}` },
+
+  { label: 'FAQs', href: `/#${sectionIds.faqs}` },
   {
     label: 'Contact us',
     href: 'mailto:webwiz.nitrkl@gmail.com',
-  },
-  {
-    label: 'Sponsors',
-    href: '#sponsors',
-  },
-  {
-    label: 'FAQs',
-    href: '#faqs',
   },
 ];
 
@@ -28,7 +21,7 @@ export const socialLinks = [
   {
     src: 'https://res.cloudinary.com/dtztahzfk/image/upload/v1749845049/insta_cqxnrd.svg',
     alt: 'Instagram',
-    href: 'https://www.instagram.com/webwiz.nitr/',
+    href: 'https://www.instagram.com/webwiz.nitr?igsh=MWNlY3VyMDNlOGU3NA==',
     className: 'hover:scale-115',
   },
   // {
@@ -38,8 +31,8 @@ export const socialLinks = [
   // },
   {
     src: 'https://res.cloudinary.com/dmvdbpyqk/image/upload/v1751640427/x-social-media-black-icon_anlrxd.svg',
-    alt: 'Twitter',
-    href: 'https://x.com/hackodisha',
+    alt: 'X',
+    href: 'https://x.com/webwiznitr',
     className: 'scale-75 hover:scale-90',
   },
   {

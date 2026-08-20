@@ -53,8 +53,8 @@ export function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`font-archivo relative font-semibold ${
                     item.type === 'special'
-                      ? 'text-[#F4E4B8] hover:text-[#000]'
-                      : 'text-[#F4E4B8] hover:text-[#000]'
+                      ? 'text-[#F4E4B8] hover:text-black'
+                      : 'text-[#F4E4B8] hover:text-black'
                   } hover:text-primary transition-colors duration-300`}
                   {...(item.type === 'special' && {
                     target: '_blank',
